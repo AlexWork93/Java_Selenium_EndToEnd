@@ -2,7 +2,6 @@ package AbstractHelpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,6 +25,9 @@ public class BasePage {
     }
 
     protected void waitUntilPageIsReady(By locator){
+        if (true){
+            //here could be code for confirming or skipping some popup message with similar locator for any page
+        }
         waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(locator), WaitsPack.FIVE_SECOND.getTimeout());
     }
 

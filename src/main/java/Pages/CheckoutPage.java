@@ -1,24 +1,24 @@
 package Pages;
 
+import AbstractHelpers.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
 
-public class CheckoutPage {
+public class CheckoutPage extends BasePage {
     WebDriver driver;
 
     public CheckoutPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "[placeholder='Select Country']")
-    WebElement checkoutCountryInputLocator;
-    @FindBy(css = "section.ta-results button")
-    List<WebElement> checkoutCountryDropdownItemLocator;
-    @FindBy(css = "div.actions .action__submit")
-    WebElement placeOrderButtonLocator;
+    private final By checkoutCountryInputLocator = By.cssSelector("[placeholder='Select Country']");
+    private final By checkoutCountryDropdownItemLocator = By.cssSelector("section.ta-results button");
+    private final By placeOrderButtonLocator = By.cssSelector("div.actions .action__submit");
+
+    @Override
+    public void waitUntilPageIsReady() {
+        super.waitUntilPageIsReady(placeOrderButtonLocator);
+    }
 }

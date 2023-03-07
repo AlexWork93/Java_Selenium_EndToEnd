@@ -1,23 +1,23 @@
 package Pages;
 
+import AbstractHelpers.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
 
-public class CartPage {
+public class CartPage extends BasePage {
     WebDriver driver;
     public CartPage(WebDriver driver){
+        super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "div.cart ul")
-    List<WebElement> cartItemLocator;
-    @FindBy(css = "div.infoWrap h3")
-    WebElement cartItemTitleLocator;
-    @FindBy(css = "div.subtotal button")
-    WebElement cartCheckoutButtonLocator;
+    private final By cartItemLocator = By.cssSelector("div.cart ul");
+    private final By cartItemTitleLocator = By.cssSelector("div.infoWrap h3");
+    private final By cartCheckoutButtonLocator = By.cssSelector("div.subtotal button");
+
+    @Override
+    public void waitUntilPageIsReady() {
+        super.waitUntilPageIsReady(cartItemLocator);
+    }
 }

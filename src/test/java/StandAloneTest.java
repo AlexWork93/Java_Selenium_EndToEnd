@@ -49,12 +49,6 @@ public class StandAloneTest {
 
         String confirmedOrderBannerMessage = "THANKYOU FOR THE ORDER.";
 
-        driver.get("https://www.rahulshettyacademy.com/client/");
-
-        By emailInputFieldLocator = By.id("userEmail");
-        By passwordInputFieldLocator = By.id("userPassword");
-        By loginButtonLocator = By.id("login");
-
         By itemCardLocator = By.cssSelector("#products .row .card");
         By itemTitleLocator = By.cssSelector(".card-body h5 b");
         By itemAddToCartButtonLocator = By.cssSelector(".card-body button:last-of-type");
@@ -72,14 +66,14 @@ public class StandAloneTest {
 
         By confirmedOrderBannerLocator = By.cssSelector("h1.hero-primary");
 
+//landing page
+        landingPage.openPage();
+        landingPage.waitUntilPageIsReady();
+        landingPage.fillLoginFormWithCredentials(email, pass);
+        landingPage.confirmLoginForm();
+        landingPage.verifySuccessfulLogin(true);
 
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButtonLocator));
-        driver.findElement(emailInputFieldLocator).sendKeys(email);
-        driver.findElement(passwordInputFieldLocator).sendKeys(pass);
-        driver.findElement(loginButtonLocator).click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(loginButtonLocator));
-
+//Catalogue page
         wait.until(ExpectedConditions.visibilityOfElementLocated(itemCardLocator));
         List<WebElement> itemCards = driver.findElements(itemCardLocator);
         WebElement itemToBuy = itemCards.stream().filter(el -> el.findElement(itemTitleLocator).getText().equalsIgnoreCase(itemName)).findFirst().orElse(null);
@@ -91,11 +85,13 @@ public class StandAloneTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(successfulNotificationLocator));
         driver.findElement(cartButtonLocator).click();
 
+//Cart page
         List<WebElement> itemsInCart = driver.findElements(cartItemLocator);
         boolean isElementInCart = itemsInCart.stream().anyMatch(el -> el.findElement(cartItemTitleLocator).getText().equalsIgnoreCase(itemName));
         Assert.assertTrue(isElementInCart);
         driver.findElement(cartCheckoutButtonLocator).click();
 
+//Checkout page
         driver.findElement(checkoutCountryInputLocator).sendKeys(countryForShipping);
         List<WebElement> countries = driver.findElements(checkoutCountryDropdownItemLocator);
         WebElement country = countries.stream().filter(el -> el.getText().equalsIgnoreCase(countryForShipping)).findFirst().orElse(null);

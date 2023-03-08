@@ -40,7 +40,7 @@ public class LandingPage extends BasePage {
 
     public void verifySuccessfulLogin(boolean successful) {
         if (successful) {
-            waitUntilElementInCondition(ExpectedConditions.invisibilityOfElementLocated(loginButtonLocator), WaitsPack.FIVE_SECOND.getTimeout());
+            waitUntilElementInCondition(ExpectedConditions.invisibilityOfElementLocated(loginButtonLocator), WaitsPack.FIVE_SECOND);
         } else {
             //Here should be error verification
         }

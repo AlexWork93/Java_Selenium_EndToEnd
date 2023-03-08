@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="Continue implementing page object structure&#10;add enum with fixed waits&#10;completed landing page functionalities&#10;add overridden method to wait until page is downloaded">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/WaitsPack.java" afterDir="false" />
+    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="minor updates">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/NotificationMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractHelpers/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CataloguePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" afterDir="false" />
@@ -48,25 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AbstractHelpers" />
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.StandAloneTest">
+  <component name="RunManager" selected="TestNG.StandAloneTest.entToEndTest">
     <configuration name="StandAloneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EndToEndDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.StandAloneTest" />
         <item itemvalue="TestNG.StandAloneTest.entToEndTest" />
+        <item itemvalue="TestNG.StandAloneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +107,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678117406758</updated>
       <workItem from="1678117408405" duration="769000" />
-      <workItem from="1678186299401" duration="17611000" />
+      <workItem from="1678186299401" duration="18780000" />
+      <workItem from="1678291358237" duration="5423000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1678187462558</created>
@@ -136,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678206960091</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor updates">
+      <created>1678207531413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678207531414</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +156,7 @@
     <MESSAGE value="add test case for main workflow of purchasing item" />
     <MESSAGE value="begin implementing page object structure" />
     <MESSAGE value="Continue implementing page object structure&#10;add enum with fixed waits&#10;completed landing page functionalities&#10;add overridden method to wait until page is downloaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue implementing page object structure&#10;add enum with fixed waits&#10;completed landing page functionalities&#10;add overridden method to wait until page is downloaded" />
+    <MESSAGE value="minor updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor updates" />
   </component>
 </project>

@@ -33,7 +33,7 @@ public class BasePage {
         if (true) {
             //here could be code for confirming or skipping some popup message with similar locator for any page
         }
-        waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(locator), WaitsPack.FIVE_SECOND);
+        waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(locator), WaitsPack.TEN_SECOND);
     }
 
     protected void waitUntilPageIsReady() {

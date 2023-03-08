@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="complete implementing page object structure&#10;add enum for notification messages">
+    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="add properties file&#10;add BaseTest&#10;add negative login case">
       <change afterPath="$PROJECT_DIR$/src/main/java/resources/GlobalData/properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/Components/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -121,7 +121,7 @@
       <updated>1678117406758</updated>
       <workItem from="1678117408405" duration="769000" />
       <workItem from="1678186299401" duration="18780000" />
-      <workItem from="1678291358237" duration="11860000" />
+      <workItem from="1678291358237" duration="12756000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1678187462558</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678296916667</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add properties file&#10;add BaseTest&#10;add negative login case">
+      <created>1678311642182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678311642182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,17 +185,7 @@
     <MESSAGE value="Continue implementing page object structure&#10;add enum with fixed waits&#10;completed landing page functionalities&#10;add overridden method to wait until page is downloaded" />
     <MESSAGE value="minor updates" />
     <MESSAGE value="complete implementing page object structure&#10;add enum for notification messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete implementing page object structure&#10;add enum for notification messages" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StandAloneTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add properties file&#10;add BaseTest&#10;add negative login case" />
+    <option name="LAST_COMMIT_MESSAGE" value="add properties file&#10;add BaseTest&#10;add negative login case" />
   </component>
 </project>

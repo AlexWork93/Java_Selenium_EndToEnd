@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="minor updates">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/NotificationMessages.java" afterDir="false" />
+    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="complete implementing page object structure&#10;add enum for notification messages">
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/GlobalData/properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Components/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AbstractHelpers/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractHelpers/NotificationMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractHelpers/NotificationMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CataloguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CataloguePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StandAloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandAloneTest.java" afterDir="false" />
     </list>
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.StandAloneTest.entToEndTest">
+  <component name="RunManager" selected="TestNG.StandAloneTest">
     <configuration name="StandAloneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EndToEndDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,10 +91,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StandAloneTest.invalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EndToEndDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StandAloneTest" />
+      <option name="METHOD_NAME" value="invalidLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.StandAloneTest.entToEndTest" />
         <item itemvalue="TestNG.StandAloneTest" />
+        <item itemvalue="TestNG.StandAloneTest.invalidLogin" />
+        <item itemvalue="TestNG.StandAloneTest.entToEndTest" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +121,7 @@
       <updated>1678117406758</updated>
       <workItem from="1678117408405" duration="769000" />
       <workItem from="1678186299401" duration="18780000" />
-      <workItem from="1678291358237" duration="5423000" />
+      <workItem from="1678291358237" duration="11860000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1678187462558</created>
@@ -145,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678207531414</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="complete implementing page object structure&#10;add enum for notification messages">
+      <created>1678296916667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678296916667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +177,18 @@
     <MESSAGE value="begin implementing page object structure" />
     <MESSAGE value="Continue implementing page object structure&#10;add enum with fixed waits&#10;completed landing page functionalities&#10;add overridden method to wait until page is downloaded" />
     <MESSAGE value="minor updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor updates" />
+    <MESSAGE value="complete implementing page object structure&#10;add enum for notification messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete implementing page object structure&#10;add enum for notification messages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StandAloneTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

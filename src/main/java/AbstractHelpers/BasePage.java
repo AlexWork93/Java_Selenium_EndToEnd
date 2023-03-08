@@ -16,7 +16,7 @@ public class BasePage {
         this.driver = driver;
     }
 
-    private final By successNotificationLocator = By.cssSelector("[role='alertdialog']");
+    private final By notificationLocator = By.cssSelector("[role='alertdialog']");
     private final By cartButtonLocator = By.cssSelector("[routerlink='/dashboard/cart']");
 
 
@@ -29,21 +29,26 @@ public class BasePage {
         driver.get(URL);
     }
 
-    protected void waitUntilPageIsReady(By locator){
-        if (true){
+    protected void waitUntilPageIsReady(By locator) {
+        if (true) {
             //here could be code for confirming or skipping some popup message with similar locator for any page
         }
         waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(locator), WaitsPack.FIVE_SECOND);
     }
 
-    protected void waitUntilPageIsReady(){
+    protected void waitUntilPageIsReady() {
     }
 
-    protected void verifyNotificationWithTextIsDisplayed(NotificationMessages notificationText) throws Exception {
-        waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(successNotificationLocator), WaitsPack.FIVE_SECOND);
-        WebElement notification = driver.findElement(successNotificationLocator);
+    public void verifyNotificationWithTextIsDisplayed(NotificationMessages notificationText) throws Exception {
+        verifyNotificationWithTextIsDisplayed(notificationText, notificationLocator);
+    }
+
+    public void verifyNotificationWithTextIsDisplayed(NotificationMessages notificationText, By locator) throws Exception {
+        waitUntilElementInCondition(ExpectedConditions.visibilityOfElementLocated(locator), WaitsPack.FIVE_SECOND);
+        WebElement notification = driver.findElement(locator);
+
         String actualNotificationText = notification.getText();
-        if (!actualNotificationText.equalsIgnoreCase(notificationText.getMessage())){
+        if (!actualNotificationText.equalsIgnoreCase(notificationText.getMessage())) {
             throw new Exception("Expected notification text:\n" + notificationText.getMessage() + "\nActual notification text:\n" + actualNotificationText);
         }
         //This click should close the notification

@@ -1,6 +1,7 @@
 package Pages;
 
 import AbstractHelpers.BasePage;
+import AbstractHelpers.NotificationMessages;
 import AbstractHelpers.WaitsPack;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,8 @@ public class LandingPage extends BasePage {
     private final By emailInputFieldLocator = By.id("userEmail");
     private final By passwordInputFieldLocator = By.id("userPassword");
     private final By loginButtonLocator = By.id("login");
+    private final By successLoginNotificationLocator = By.cssSelector("div.toast-success");
+
     String URL = "https://www.rahulshettyacademy.com/client/";
 
     public void openPage() {
@@ -38,11 +41,16 @@ public class LandingPage extends BasePage {
         driver.findElement(loginButtonLocator).click();
     }
 
-    public void verifySuccessfulLogin(boolean successful) {
+    public void verifySuccessfulLogin(boolean successful) throws Exception {
         if (successful) {
             waitUntilElementInCondition(ExpectedConditions.invisibilityOfElementLocated(loginButtonLocator), WaitsPack.FIVE_SECOND);
         } else {
-            //Here should be error verification
+            if (!driver.findElement(loginButtonLocator).isDisplayed()){
+                throw new Exception("Unable to locate " + loginButtonLocator);
+            }
         }
+    }
+    public void verifySuccessfulLoginNotificationIsDisplayed(NotificationMessages notificationText) throws Exception {
+        verifyNotificationWithTextIsDisplayed(notificationText, successLoginNotificationLocator);
     }
 }

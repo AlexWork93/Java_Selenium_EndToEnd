@@ -41,9 +41,4 @@ public class CataloguePage extends BasePage {
         }
     }
 
-    @Override
-    public void verifyNotificationWithTextIsDisplayed(NotificationMessages notificationText) throws Exception {
-        super.verifyNotificationWithTextIsDisplayed(notificationText);
-    }
-
 }

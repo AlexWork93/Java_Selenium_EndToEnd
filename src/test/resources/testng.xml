@@ -1,0 +1,12 @@
+<suite parallel ="tests" name="Regression Test Suite">
+    <test name="End_To_End test">
+        <classes>
+            <class name="StandAloneTest"/>
+        </classes>
+    </test>
+    <test name="End_To_End test2">
+    <classes>
+        <class name="StandAloneTest2"/>
+    </classes>
+</test>
+</suite>

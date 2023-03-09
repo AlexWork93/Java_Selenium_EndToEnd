@@ -3,8 +3,9 @@ import Components.BaseTest;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import testData.DataReader;
 
-import java.util.HashMap;
+import java.io.IOException;
 import java.util.Map;
 
 public class StandAloneTest extends BaseTest {
@@ -42,23 +43,9 @@ public class StandAloneTest extends BaseTest {
     }
 
     @DataProvider
-    public Object [][] getData1(){
-        Map<String,String> dataSet1 = new HashMap<String,String>();
-        dataSet1.put("email","EndToEndFirst@mailinator.com");
-        dataSet1.put("password","EToEPass1!");
-        dataSet1.put("product","ZARA COAT 3");
-        dataSet1.put("country","Ukraine");
-        Map<String,String> dataSet2 = new HashMap<String,String>();
-        dataSet2.put("email","EndToEndFirst@mailinator.com");
-        dataSet2.put("password","EToEPass1!");
-        dataSet2.put("product","ADIDAS ORIGINAL");
-        dataSet2.put("country","Ukraine");
-        Map<String,String> dataSet3 = new HashMap<String,String>();
-        dataSet3.put("email","EndToEndFirst@mailinator.com");
-        dataSet3.put("password","EToEPass1!");
-        dataSet3.put("product","IPHONE 13 PRO");
-        dataSet3.put("country","Ukraine");
-        return new Object[][] {{dataSet1}, {dataSet2}, {dataSet3}};
+    public Object [][] getData1() throws IOException {
+        DataReader dataReader = new DataReader();
+        return dataReader.getJsonDataToObject("/src/test/java/testData/EndToEndData.json");
     }
 
     @Test

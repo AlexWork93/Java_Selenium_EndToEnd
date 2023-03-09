@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="increase wait until page is loaded">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StandAloneTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+    <list default="true" id="ad58a9a7-f76a-4f7e-b64e-8acccba7843a" name="Changes" comment="add testng.xml file&#10;create data driven scenario based of dataProvider">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testData/DataReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testData/EndToEndData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StandAloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandAloneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="package.json" />
         <option value="Class" />
       </list>
     </option>
@@ -133,7 +135,7 @@
       <workItem from="1678117408405" duration="769000" />
       <workItem from="1678186299401" duration="18780000" />
       <workItem from="1678291358237" duration="13529000" />
-      <workItem from="1678371358389" duration="2793000" />
+      <workItem from="1678371358389" duration="8286000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1678187462558</created>
@@ -191,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678312594774</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add testng.xml file&#10;create data driven scenario based of dataProvider">
+      <created>1678375154304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678375154304</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,17 +215,7 @@
     <MESSAGE value="complete implementing page object structure&#10;add enum for notification messages" />
     <MESSAGE value="add properties file&#10;add BaseTest&#10;add negative login case" />
     <MESSAGE value="increase wait until page is loaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="increase wait until page is loaded" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StandAloneTest.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add testng.xml file&#10;create data driven scenario based of dataProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testng.xml file&#10;create data driven scenario based of dataProvider" />
   </component>
 </project>
